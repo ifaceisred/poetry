@@ -53,7 +53,8 @@ export function MobileMenu({ dict, lang }: Props) {
         >
           <SheetHeader>
             <SheetTitle asChild>
-              <Logo lang={lang} />
+              <div>{dict.title}</div>
+              {/* <Logo lang={lang} /> */}
             </SheetTitle>
           </SheetHeader>
           <Content dict={dict} lang={lang} />
