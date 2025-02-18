@@ -160,7 +160,7 @@ export function Content({
       <div className="px-4">
         <Separator className="my-4" />
       </div>
-      <p className="px-4 text-f50 text-muted-foreground">{dict.menu.contact}</p>
+      {/* <p className="px-4 text-f50 text-muted-foreground">{dict.menu.contact}</p>
       <nav className="flex space-x-2 p-4">
         {[
           {
@@ -214,7 +214,7 @@ export function Content({
         <Link href={"http://beian.miit.gov.cn/"} target="_blank">
           蜀ICP备2023009496号-2
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }

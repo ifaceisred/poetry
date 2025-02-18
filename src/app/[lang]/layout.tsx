@@ -64,8 +64,9 @@ export default async function Layout({
         <aside className="hidden lg:block">
           <div className="fixed left-0 top-0 h-screen bg-muted/50">
             <ScrollArea className="sticky top-0 h-full w-72 border-border">
-              <header className="h-16">
-                <Logo lang={params.lang} />
+              <header className="h-16 flex items-center justify-center text-2xl">
+                <div>{dict.title}</div>
+                {/* <Logo lang={params.lang} /> */}
               </header>
 
               <div>
