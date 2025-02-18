@@ -1,3 +1,9 @@
+/*
+ * @Author: ifaceisred 1194119372@qq.com
+ * @Date: 2025-01-21 14:41:28
+ * @LastEditTime: 2025-02-18 15:00:16
+ * @Description: 
+ */
 import { HeaderMain } from "~/components/ui/header";
 import { api } from "~/trpc/server";
 import { notFound } from "next/navigation";
@@ -16,18 +22,18 @@ export default async function IndexPage({
   const dict = await getDictionary(params.lang);
   const pageIndex = Number(params?.page ?? 1);
 
-  if (pageIndex < 1 || isNaN(pageIndex)) notFound();
+  // if (pageIndex < 1 || isNaN(pageIndex)) notFound();
 
   const { data: poems } = await api.poem.find.query({
     page: pageIndex,
     pageSize: 24,
-    sort: "updatedAt",
+    // sort: "all",
     lang: params.lang,
   });
 
-  if (!poems || poems.length === 0) {
-    notFound();
-  }
+  // if (!poems || poems.length === 0) {
+  //   notFound();
+  // }
 
   return (
     <>
