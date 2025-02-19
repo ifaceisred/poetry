@@ -53,7 +53,7 @@ async function main() {
             title: '静夜思',
             titlePinYin: 'Jing Ye Si',
             content: '床前明月光，\n疑是地上霜。\n举头望明月，\n低头思故乡。',
-            contentPinYin: 'Chuang qian ming yue guang,\n yi shi di shang shuang. \nJu tou wang ming yue, \ndi tou si gu xiang.',
+            contentPinYin: 'Chuang qian ming yue guang, \nyi shi di shang shuang. \nJu tou wang ming yue, \ndi tou si gu xiang.',
             author: {
                 connect: { id: author1.id },
             },

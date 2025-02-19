@@ -9,8 +9,8 @@ export function isMobile() {
   return "ontouchstart" in document.documentElement;
 }
 
-export const MyHost = `https://aspoem.com`;
-export const R2Host = `https://r2.aspoem.com`;
+export const MyHost = `https://poetry.chujiaweicode.top`;
+export const R2Host = `https://poetry.chujiaweicode.top`;
 
 /** 可用其他颜色 */
 export const colors = [
