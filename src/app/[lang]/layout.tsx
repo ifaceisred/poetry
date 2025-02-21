@@ -26,7 +26,7 @@ export async function generateMetadata({
   return {
     title: {
       template: `%s | ${dict.title}`,
-      default: `AsPoem | ${dict.title}`,
+      default: `${dict.title}`,
     },
     description: dict.description,
     icons: [{ rel: "icon", url: "/favicon.ico" }],

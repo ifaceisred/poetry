@@ -72,7 +72,7 @@ export default function Page() {
   };
 
   useEffect(() => {
-    void fetch("https://r2.aspoem.com/content.json")
+    void fetch("https://r2.poetry.chujiaweicode.top/content.json")
       .then((res) => res.json())
       .then((res) => {
         setDataSource(

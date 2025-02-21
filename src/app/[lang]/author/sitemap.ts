@@ -5,6 +5,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const data = await api.author.sitemap.query();
 
   return data.map((item) => ({
-    url: `https://aspoem.com/author/${item.id}`,
+    url: `https://poetry.chujiaweicode.top/author/${item.id}`,
   }));
 }

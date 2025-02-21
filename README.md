@@ -1,4 +1,4 @@
-# [AsPoem](https://aspoem.com)
+# [AsPoem](https://poetry.chujiaweicode.top)
 
 > V1 正在开发中, 可在这里查看 [V1版本](https://github.com/meetqy/aspoem/tree/v1)
 
@@ -31,7 +31,7 @@
 
 |WeChat|AliPay|
 |-|-|
-|<img alt="WeChat 赞赏" width="200" src="https://r2.aspoem.com/coffee/WeChat.JPG" />|<img alt="AliPay 赞赏" width='200' src="https://r2.aspoem.com/coffee/AliPay.PNG" />|
+|<img alt="WeChat 赞赏" width="200" src="https://r2.poetry.chujiaweicode.top/coffee/WeChat.JPG" />|<img alt="AliPay 赞赏" width='200' src="https://r2.poetry.chujiaweicode.top/coffee/AliPay.PNG" />|
 
 ### 赞赏列表
 

@@ -24,7 +24,7 @@ export default function Twikoo({ lang }: { lang: Locale }) {
 
       initScript.innerHTML = `
             twikoo.init({
-              envId: "https://twikoo.aspoem.com/.netlify/functions/twikoo",
+              envId: "https://twikoo.poetry.chujiaweicode.top/.netlify/functions/twikoo",
               el: '#twikoo-comment',
               lang: "${_lang}",
               path: "${pathname}",

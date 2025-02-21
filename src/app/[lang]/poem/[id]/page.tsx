@@ -231,7 +231,7 @@ export default async function Page({ params, searchParams }: Props) {
               分享到 Twitter
             </Link>
           </Button>
-          <SaveShareButton
+          {/* <SaveShareButton
             scale={3}
             title={
               <>
@@ -241,7 +241,7 @@ export default async function Page({ params, searchParams }: Props) {
             }
           >
             <DrawDefaultPreview data={poem} />
-          </SaveShareButton>
+          </SaveShareButton> */}
 
           {poem.content.split(/，|？|。|！/).length <= 9 && (
             <Button asChild variant={"outline"}>
@@ -252,7 +252,7 @@ export default async function Page({ params, searchParams }: Props) {
             </Button>
           )}
 
-          {poem.content.split(/，|？|。|！/).length <= 5 && (
+          {/* {poem.content.split(/，|？|。|！/).length <= 5 && (
             <SaveShareButton
               scale={2}
               title={
@@ -268,9 +268,9 @@ export default async function Page({ params, searchParams }: Props) {
                 className="bg-background"
               />
             </SaveShareButton>
-          )}
+          )} */}
 
-          {poem.content.split(/，|？|。|！/).length <= 5 && (
+          {/* {poem.content.split(/，|？|。|！/).length <= 5 && (
             <SaveShareButton
               scale={2}
               title={
@@ -286,7 +286,7 @@ export default async function Page({ params, searchParams }: Props) {
                 className="bg-background"
               />
             </SaveShareButton>
-          )}
+          )} */}
         </div>
 
         {poem.cards.length > 0 && ShowPoemCard({ poem })}
