@@ -29,7 +29,7 @@ export async function generateMetadata({
       default: `${dict.title}`,
     },
     description: dict.description,
-    icons: [{ rel: "icon", url: "/favicon.ico" }],
+    icons: [{ rel: "icon", url: "/site-logo.png" }],
     alternates: getMetaDataAlternates("/", params.lang),
     metadataBase: new URL(MyHost),
     twitter: {
