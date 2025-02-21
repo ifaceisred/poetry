@@ -305,7 +305,7 @@ export default async function Page({ params, searchParams }: Props) {
         <p className="prose-p">
           <InfoIcon className="-mt-1.5 mr-2 inline-block" />
           {dict.poem.report_error_desc}
-          <GoFeedback id={poem.id} lang={params.lang} dict={dict} />
+          {/* <GoFeedback id={poem.id} lang={params.lang} dict={dict} /> */}
         </p>
       </article>
 

@@ -15,6 +15,7 @@ import {
   SendIcon,
   Tag,
   TwitterIcon,
+  Mail,
   UserRound,
 } from "lucide-react";
 import { Separator } from "~/components/ui/separator";
@@ -68,8 +69,8 @@ export function Content({
             icon: Rows2,
             variant:
               /^\/(poem|list)/.test(pathname) ||
-              pathname === "" ||
-              pathname === "/"
+                pathname === "" ||
+                pathname === "/"
                 ? "default"
                 : "ghost",
             href: `/${lang}`,
@@ -160,34 +161,34 @@ export function Content({
       <div className="px-4">
         <Separator className="my-4" />
       </div>
-      {/* <p className="px-4 text-f50 text-muted-foreground">{dict.menu.contact}</p>
+      <p className="px-4 text-f50 text-muted-foreground">{dict.menu.contact}</p>
       <nav className="flex space-x-2 p-4">
         {[
           {
             title: "GitHub",
-            href: "https://github.com/meetqy/aspoem",
+            href: "https://github.com/ifaceisred/",
             icon: <GithubIcon className="h-6 w-6" strokeWidth={1.5} />,
           },
           {
-            title: "twitter",
-            href: "https://twitter.com/meetqy",
-            icon: <TwitterIcon className="h-6 w-6" strokeWidth={1.5} />,
+            title: "邮箱",
+            href: "mailto:1194119372@qq.com",
+            icon: <Mail className="h-6 w-6" strokeWidth={1.5} />,
           },
-          {
-            title: `ProductHunt`,
-            href: "https://www.producthunt.com/products/aspoem-com-learn-chinese-poetry",
-            icon: <Rocket className="h-6 w-6" strokeWidth={1.5} />,
-          },
-          {
-            title: "留言",
-            href: `/${lang}/feedback`,
-            icon: (
-              <SendIcon
-                className="h-6 w-6 text-destructive"
-                strokeWidth={1.5}
-              />
-            ),
-          },
+          // {
+          //   title: `ProductHunt`,
+          //   href: "https://www.producthunt.com/products/aspoem-com-learn-chinese-poetry",
+          //   icon: <Rocket className="h-6 w-6" strokeWidth={1.5} />,
+          // },
+          // {
+          //   title: "留言",
+          //   href: `/${lang}/feedback`,
+          //   icon: (
+          //     <SendIcon
+          //       className="h-6 w-6 text-destructive"
+          //       strokeWidth={1.5}
+          //     />
+          //   ),
+          // },
         ].map(({ href, icon, title }) => (
           <Button
             key={href}
@@ -206,15 +207,15 @@ export function Content({
           </Button>
         ))}
       </nav>
-      <div className="px-4">
+      {/* <div className="px-4">
         <Separator className="mb-4" />
-      </div>
+      </div> */}
       <p className="px-4 text-f50 text-muted-foreground">备案号</p>
       <div className="my-4 px-4 text-f50">
         <Link href={"http://beian.miit.gov.cn/"} target="_blank">
-          蜀ICP备2023009496号-2
+          沪ICP备2024063796号-1
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 }
