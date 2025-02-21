@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { PrismaClient } from '@prisma/client'
 
 const prisma = new PrismaClient();
@@ -34,6 +36,9 @@ async function main() {
     });
 
     // 提取所有作品
+    /**
+     * @type {{ id: number; title: string; titlePinYin: string | null; title_zh_Hant: string | null; content: string; content_zh_Hant: string | null; contentPinYin: string | null; introduce: string | null; introduce_zh_Hant: string | null; translation: string | null; translation_zh_Hant: string | null; translation_en: string | null; annotation: string | null; annotation_zh_Hant: string | null; authorId: number; classify: string | null; genre: string | null; createdAt: Date | null; updatedAt: Date | null; views: number; }[]}
+     */
     const allPoems = [];
     authorsWithPoems.forEach(author => {
         allPoems.push(...author.poems);
