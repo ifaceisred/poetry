@@ -75,8 +75,8 @@ async function main() {
 }
 
 // main()
-main()
-    .catch((e) => console.error(e))
-    .finally(async () => {
-        await prisma.$disconnect();
-    });
+// main()
+//     .catch((e) => console.error(e))
+//     .finally(async () => {
+//         await prisma.$disconnect();
+//     });
